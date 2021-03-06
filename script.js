@@ -3,7 +3,7 @@ let sepia = document.querySelector('#sepia')
 let invert = document.querySelector('#invert')
 let range = document.querySelector('.range1')
 let box = document.querySelector('.img')
-let persentage = document.querySelector('.persentage')
+let percentage = document.querySelector('.percentage')
 
 let currentEffect
 
@@ -11,7 +11,7 @@ range.addEventListener('input', () =>{
     if(currentEffect === 'blur')blurEffect()
     if(currentEffect === 'sepia')sepiaEffect()
     if(currentEffect === 'invert')invertEffect()
-    persentage.textContent =`${range.value}%`
+    percentage.textContent =`${range.value}%`
 })
 
 blur.addEventListener('click',() => {
